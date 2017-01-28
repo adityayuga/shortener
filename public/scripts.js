@@ -1,13 +1,15 @@
 $(document).ready( function(){
 
   var input  = $('input[name="url"]')
-  var result = $('#link');
+  var result = $('#link')
+  var resultSection = $('#result-section')
   var submitBtn = $('#submit')
 
   function displayResult(response) {
     result.html(response.data.short)
     result.attr('href', response.data.short)
     input.val('')
+    resultSection.css('display', '')
   }
 
   submitBtn.click( function(e){
