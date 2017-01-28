@@ -1,0 +1,32 @@
+{
+  "name": "ShortenerURL",
+  "version": "1.0.0",
+  "description": "A Shortener URL website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityayuga/shortener.git"
+  },
+  "keywords": [
+    "url",
+    "shorturl",
+    "urlshortener",
+    "uri",
+    "service"
+  ],
+  "author": "Aditya Yuga Pradhana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adityayuga/shortener/issues"
+  },
+  "homepage": "https://github.com/adityayuga/shortener#readme",
+  "dependencies": {
+    "hapi": "^13.5.3",
+    "joi": "^8.4.2",
+    "inert": "^4.0.1",
+    "mongoose": "^4.7.6"
+  }
+}
