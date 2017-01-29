@@ -1,10 +1,10 @@
 const Mongoose = require('mongoose')
 const config = require('./config')
 
-var mongoUri = 'mongodb://' + config.database.host + '/' + config.database.db;
+var mongoUri = 'mongodb://' + config.database
 
 if(process.env.OPENSHIFT_MONGODB_DB_URL){
-  mongoUri = process.env.OPENSHIFT_MONGODB_DB_URL + db_name;
+  mongoUri = process.env.OPENSHIFT_MONGODB_DB_URL
 }
 
 Mongoose.connect(mongoUri);
