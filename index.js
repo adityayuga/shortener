@@ -9,7 +9,7 @@ var app = {};
 app.config = Config;
 
 const server = new Hapi.Server()
-server.connection({ port: process.env.PORT || app.config.server.port, host: app.config.server.host })
+server.connection({ port: process.env.PORT || app.config.server.port })
 
 // Print some information about the incoming request for debugging purposes
 server.ext('onRequest', function (request, reply) {
