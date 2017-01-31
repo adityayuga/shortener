@@ -7,7 +7,7 @@ const Shorturl = require('../model/shorturl').Shorturl
 exports.create = {
     validate: {
         payload: {
-            url: Joi.string().regex(/^https?:\/\/([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/).required()
+            url: Joi.string().regex(/^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/).required()
         }
     },
     handler: function(request, reply) {
